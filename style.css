@@ -1,0 +1,24 @@
+/* Extra spacing for the main container */
+.container {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+}
+
+/* Ensure cards fill the column height */
+.card.h-100 {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Optional: Add a little more padding to card bodies */
+.card-body {
+  padding-bottom: 2rem;
+}
+
+/* Custom navbar height and padding for better fit on small screens */
+.navbar {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  min-height: 56px; /* Bootstrap default */
+  /* Remove max-height */
+}
