@@ -1,3 +1,75 @@
+/* Color palette */
+:root {
+  --color-bg: #F8F9FA;
+  --color-surface: #FFFFFF;
+  --color-primary-text: #343A40;
+  --color-secondary-text: #6C757D;
+  --color-accent1: #FFB385; /* peach */
+  --color-accent2: #FF7F50; /* coral */
+  --color-accent3: #FFD6A5; /* light apricot */
+  --color-accent4: #E9ECEF; /* light neutral gray */
+  --color-accent5: #CED4DA; /* soft gray */
+}
+
+/* Apply palette */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-primary-text);
+}
+
+.navbar,
+footer,
+header.bg-light {
+  background-color: var(--color-surface) !important;
+}
+
+.navbar-brand,
+h1, h5 {
+  color: var(--color-primary-text) !important;
+}
+
+footer {
+  color: var(--color-secondary-text) !important;
+}
+
+.card {
+  background-color: var(--color-surface);
+  border-color: var(--color-accent5);
+  box-shadow: 0 2px 8px 0 var(--color-accent4, #e9ecef);
+}
+
+.card-title {
+  color: var(--color-primary-text);
+}
+
+.card-text {
+  color: var(--color-secondary-text);
+}
+
+/* Accent buttons */
+.btn-primary, .btn-primary:focus, .btn-primary:active {
+  background-color: var(--color-accent2);
+  border-color: var(--color-accent2);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent1);
+  border-color: var(--color-accent1);
+  color: var(--color-primary-text);
+}
+
+.btn-outline-primary, .btn-outline-primary:focus, .btn-outline-primary:active {
+  color: var(--color-accent2);
+  border-color: var(--color-accent2);
+  background-color: transparent;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--color-accent1);
+  border-color: var(--color-accent1);
+  color: var(--color-primary-text);
+}
+
 /* Extra spacing for the main container */
 .container {
   margin-top: 3rem !important;
